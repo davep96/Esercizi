@@ -1,0 +1,42 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	\begin{ese}[13.3]
+		Dimostrare che i decadimenti:
+		\begin{gather}
+			\label{eqn:deceta1}
+			\eta \to \pi^{+}+\pi^{0}+\pi^{-} \\
+			\label{eqn:deceta2}
+			\eta \to \pi^{0}+\pi^{0}+\pi^{0}
+		\end{gather}
+		Sono proibiti dalla simmetria di isospin.
+	\end{ese}
+	\begin{svol}
+		I pioni hanno isospin in modulo uguale a $ I_{\pi}=1 $, e ciascun pione può essere visto come uno stato diverso della stessa particella assegnando come valori di $ I_{z} $:
+		\begin{gather}
+		I_{z}\ket{\pi^{\pm}}=\pm\ket{\pi^{\pm}},\quad I_{z}\ket{\pi^{0}}=0\ket{\pi^{0}}
+		\end{gather}
+		Perciò il gruppo che governa questi stati è $ SU(2) $ e in particolare questi stati sono ben descritti da una rappresentazione tridimensionale dell'algebra di questo gruppo. Al contrario il mesone $ \eta $ ha isospin zero come è possibile verificare sul libretto del PDG del 2016 a pagina 35 è zero. Con questo in mente, è possibile calcolare i valori possibili di isospin totale a destra e a sinistra della reazione. In tutti e due i casi quello a sinistra è banalmente zero mentre quello a destra è dato dal prodotto di tre rappresentazioni $ \bold{3} $ di $ \mathfrak{su}(2) $. Questo si può calcolare tramite l'uso di diagrammi di Young. Usando questo formalismo, in cui ciascun quadrato rappresenta una rappresentazione fondamentale (quindi di dimensione due in questo caso) dell'algebra, è possibile vedere di colpo i prodotti di rappresentazioni e le loro relazioni di simmetria ed antisimmetria. In particolare rappresentazioni ottenute per simmetrizzazioni di fondamentali sono rappresentate nei tableaux da quadrati accostati orizzontalmente, quelle ottenute per antisimmetrizzazione sono poste verticalmente. Utilizzando questo formalismo si ha che $ \yng(2) $ rappresenta la rappresentazione tridimensionale e, iniziando dal prodotto di due rappresentazioni:
+		\begin{equation}
+		\Yvcentermath1
+			\yng(2)\otimes\yng(2)=\yng(4)\oplus\yng(2)\oplus\yng(1,1)
+		\end{equation}
+		Dove $ \yng(4) $ è la rappresentazione $ \bold{5} $ e $\Yvcentermath1\yng(1,1)$ è la rappresentazione banale. Queste rappresentazioni corrispondono a valori di isospin uguale a due e zero. Tuttavia, avendo spin zero i pioni sono bosoni e poiché la rappresentazione banale è ottenuta per antisimmetrizzazione questa va scartata. Procedendo quindi con il secondo prodotto si ottiene, per il primo dei due tableax:
+		\begin{equation}
+			\Yvcentermath1
+			\yng(4)\otimes\yng(2)=\yng(6)\oplus\yng(5,1)\oplus\yng(4,2)
+		\end{equation}
+		Corispondenti a rappresentazioni di dimensione sette, cinque e uno. Inoltre la cinque, possedendo una parte antisimmetrica deve essere scartata. Il secondo prodotto è uguale al primo, e come visto prima non presenta tra i suoi prodotti una rappresentazione banale completamente simmetrica. Dunque i decadimenti \ref{eqn:deceta1} e \ref{eqn:deceta2} non sono possibili attraverso interazioni che conservino l'isospin.
+		
+		È anche possibile dedurre questo risultato per un'altra strada, senza ricorrere al formalismo dei tableaux di Young. Infatti, è banale il fatto che, la somma di tre rappresentazioni di isospin con numero quantico uguale ad $ 1 $ è:
+		\begin{gather}
+			\label{eqn:scomp1x1x1}
+			1\otimes1\otimes1=(3\oplus2\oplus1\oplus2\oplus1\oplus0\oplus1)
+		\end{gather}
+		(si noti come questi si sovrappongono esattamente alli tableaux trovati prima, eccetto che ogni informazione riguardo alla simmetrizzazione o antisimmetrizzazione è nulla). Da questa scomposizione può sembrare che ci sia anche la rappresentazione banale 0 tra le scelte possibili. Facciamo vedere che questo è falso, poiché la 0 corrisponde alla completa antisimmetrizzazione. Per definizione di rappresentazione riducibile, sappiamo che questo è l'unico modo di ridurre l'algebra prodotto ossia che, se dovessimo trovare un sottospazio invariante per trasformazioni che conservano l'isospin e che abbia dimensione uno, questo è certamente identificato con lo 0 dell'equazione \ref{eqn:scomp1x1x1}. Consideriamo lo spazio completamente antisimmetrico. Questo è composto da tutte le funzioni indipendenti completamente antisimmetriche di tre pioni, ciascuno dei quali può avere uno di tre valori. La dimensione di questa rappresentazione è quindi uguale al coefficiente binomiale con entrambi i valori uguali, ed uguali a tre:
+		\begin{gather*}
+		\dim(V_{antisimm})=\binom{3}{3}=1
+		\end{gather*}
+		dunque coincide con la rappresentazione 0. Poiché la funzione d'onda di tre pioni deve essere completamente simmetrica, questo sottospazio è da scartare.
+	\end{svol}
+\end{document}

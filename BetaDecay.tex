@@ -1,0 +1,89 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{subfiles}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{siunitx}
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+\usepackage[margin=1.00in]{geometry}
+\usepackage{lmodern}
+
+\theoremstyle{plain} 
+\newtheorem{ese}{Esercizio}
+
+\newenvironment{svol}{\paragraph{Svolgimento:}}{\hfill$\square$\newline}
+
+\newcommand{\der}[3][]{\ensuremath{\dfrac{d^{#1}#2}{d#3^{#1}}}}
+
+\begin{document}
+	\begin{ese}
+		Data la sezione d'urto:
+		\begin{gather}
+		\label{eqn:sigmanu}
+		\sigma(\overline{\nu}+p\to e^++n)\approx5.6\dfrac{G_{F}^2E_{\nu}^{2}\left(\hbar c\right)^2}{\pi}
+		\end{gather}
+		Assumendo che tale sezione d'urto sia indipendente dallo stato legato di $ p $ in un nucleo, calcolare il libero cammino medio in $ \chem{Fe} $ di un antineutrino di $ \SI{1}{\mega\electronvolt} $.
+		
+		Considerando un reattore nucleare di $ W=\SI{700}{\mega\watt} $:
+		\begin{enumerate}
+		\item Quante fissioni avvengono in un secondo?
+		\item Qual è l'ordine di grandezza di energia e flusso degli antineutrini a $ \SI{10}{\meter} $ dal reattore?
+		\item Quante interazioni per ora sono attese in $ \SI{200}{\liter} $ di $ \chem{H_2O} $ (si consideri solo l'interazione con $ \chem{H} $)?
+		\end{enumerate}
+	\end{ese}
+	\begin{svol}
+		Come visto a lezione il libero cammino medio è definito come:
+		\begin{gather}
+		\label{eqn:libcammdef}
+		\lambda:=\dfrac{1}{n_{t}\sigma}
+		\end{gather}
+		ove $ n_{t} $ rappresenta la densità numerica di target (espressa in unità inverse di volume) e $ \sigma $ è la sezione d'urto. Quest'ultima si può ricavare dai dati forniti dal problema utilizzando la formula \ref{eqn:sigmanu}, mentre per trovare la seconda bisogna consultare le tabelle. Per la prima, in particolare si ha:
+		\begin{gather}
+			\sigma=\SI{8e-38}{m^{2}}
+		\end{gather} 
+		Per calcolare $ n_{t} $ bisogna prendere in considerazione più costanti. Questo numero rappresenta la densità di target, che in queto caso sono i protoni. La densità di protoni può essere ricavata dalla densità di nuclei di ferro, moltiplicandola per 26, il numero di protoni per nucleo. Quest'ultima densità, è ricavabile tramite la nota relazione a partire dalla densità di massa, il peso atomico e il numero di Avogadro. La formula completa è:
+		\begin{gather}
+			n_{t}=\dfrac{Z\rho N_{a}}{m_{\chem{Fe}}}\approx\SI{2.2e27}{\per\meter\cubed}
+		\end{gather}
+		Il libero cammino medio è quindi:
+		\begin{gather}
+		\lambda=\SI{4.807e7}{\kilo\meter}
+		\end{gather}
+		
+		
+		L'energia liberata per fissione è di $ Q_{fiss}=\SI{183}{\mega\electronvolt}=\SI{2.932e-11}{\joule} $. Si ha quindi che il numero di fissioni al secondo è:
+		\begin{gather*}
+			f=\dfrac{W}{Q_{fiss}}=\SI{2.287e19}{\chem{^{235}U}\per\second}
+		\end{gather*}
+		
+		
+		Se ogni antineutrino ha $ \SI{1}{\mega\electronvolt} $ come nella prima parte dell'esercizio allora gli antineutrini vengono sprigionati con un tasso di 
+		\begin{gather*}
+			f_{\overline{\nu}}=\dfrac{\SI{700}{\mega\watt}}{\SI{1}{\mega\electronvolt}}=\SI{4.37e21}{\per\second}
+		\end{gather*}
+		Supponendo che i neutrini vengano emessi senza assi privilegiati, si ha dunque, a $ \SI{10}{\meter} $ un flusso di antineutrinineutrini pari a:
+		\begin{gather*}
+			\Phi_{\overline{\nu}}=\dfrac{f_{\overline{\nu}}}{400\pi}=\SI{1.09226e19}{\overline{\nu}\per\meter\squared}
+		\end{gather*}
+		Poiché ciascun antineutrino porta un $ \si{\mega\electronvolt} $ il flusso di energia totale è di:
+		\begin{gather*}
+			\Phi=\SI{1.09226e19}{\mega\electronvolt\per\meter\squared}
+		\end{gather*}
+		
+		Il peso atomico dell'acquaè di circa $ \SI{18}{u} $ e la densità dell'acqua è di un kilogrammo per litro. In 200 litri d'acqua ci sono quindi:
+		\begin{gather*}
+		N_{\chem{H_{2}O}}=\dfrac{200}{\num{18e-3}}N_{A}=\num{6.69e27}
+		\end{gather*}
+		molecole d'acqua. Ciascuna di queste contiene due atomi di idrogeno quindi:
+		\begin{gather*}
+		N_{\chem{H}}=\num{1.338e28}		\end{gather*}
+		Il numero di interazioni per unità di tempo è dato dalla formula:
+		\begin{gather*}
+			\der[]{n(\theta)}{t}=\dfrac{\Phi N_{T}\sigma}{2\pi}=
+		\end{gather*}
+	\end{svol}
+\end{document}

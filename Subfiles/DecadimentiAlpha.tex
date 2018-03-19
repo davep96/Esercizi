@@ -1,0 +1,88 @@
+\documentclass[../main.tex]{subfiles}
+
+
+\begin{document}
+		\begin{ese}[4.1]
+			Calcolare il Q-valore del decadimento:
+			\[ \chem{^{224}Ra}\to\chem{^{220}Rn}+\alpha \]
+			e sapendo che il tempo di dimezzamento è di 3.66 giorni, calcolare il fattore di Gamow.
+			Stimare il tempo di dimenzzamento per i possibili decadimenti:
+			\[ \chem{^{224}Ra}\to\chem{^{212}Pb}+\chem{^{12}C} \]
+			\[ \chem{^{224}Ra}\to\chem{^{210}Pb}+\chem{^{14}C} \]
+		\end{ese}
+		\begin{svol}
+			Va calcolato in primis il Q-valore. Questo è per definizione l'energia liberata del decadimento, ed è uguale alla differenza delle masse nucleari. Tra i dati necessari, non dati dal testo del problema ci sono quindi gli eccessi di massa per gli elementi. Consultando le tabelle si può trovare che:
+			
+			\begin{center}
+			\begin{tabular}{ll}
+				Elemento & Eccesso di massa ($\si{\mega\electronvolt}$) \\
+				$ \alpha $ (particella) & 2.42 \\
+				$ \chem{^{224}Ra} $ & 18.83 \\
+				$ \chem{^{220}Rn} $ & 10.61 \\
+				$ \chem{^{212}Pb} $ & -7.55 \\
+				$ \chem{^{210}Pb} $ & -14.73 \\
+				$ \chem{^{14}C} $ & 3 \\
+			\end{tabular} 
+			\end{center}
+			Il Q valore si può ottenere quindi per differenza. In particolare si ha:
+			\begin{center}
+				\begin{tabular}{lll}
+					& $ \si{u} $ & $ \si{\mega\electronvolt} $ \\
+					$ \chem{Ra} $  & 224 & +18.86\\
+					$ \chem{Rn} $  & -220 & -10.61 \\
+					$ \alpha $ & -4 & -2.42 \\\hline
+					Q valore & 0 & 5.83 \\
+				\end{tabular}
+			\end{center}
+			Per trovare il fattore di Gamow si utilizza la legge di Geiger-Nuttal, con i coefficienti espressi secondo i dati. In particolare si ha che:
+			\[ \ln(\tau)=\ln\left(\dfrac{v}{2a}\right)-2G_{\alpha} \]
+			Da cui
+			\[ \tau_{1/2}=\ln(2)\tau\implies\tau=\dfrac{\tau_{1/2}}{\ln(2)}=\SI{5.28}{d}=\SI{4.56e5}{\second} \]
+			Si assume come valore di $ V_{0} $ dell'energia di legame particella $ \alpha $ nucleo $ \SI{30}{\mega\electronvolt} $. Da cui:
+			\[ v=\sqrt{\dfrac{2(Q+V_{0})}{m}}=0.14c \]
+			Il raggio $ a $ del nucleo è dato dalla solita fomula:
+			\[ a=r_{0}A^{1/3}=7.29\si{\femto\meter} \]
+			Combinando tutto:
+			\[ G=-\dfrac{1}{2}\left(\ln(\tau)+\ln\left(\dfrac{2a}{v}\right)\right)=-\dfrac{1}{2}\left(\ln\left(\dfrac{2a\tau}{v}\right)\right)=18.19 \]
+			Si può sfruttare quindi quanto ottenuto per stimare i fattori Gamow e quindi i tempi di decadimento per i decadimenti richiesti nel punto due. Si ha che:
+			\[ G=\alpha\sqrt{\dfrac{2mc^{2}}{Q}}Z_{X}(Z_{\chem{Ra}}-Z_{X})f\left(\dfrac{a}{b}\right) \]
+			Da cui, dividendo per $ G_{\alpha} $:
+			\[ \dfrac{G_{X}}{G_{\alpha}}=\dfrac{\sqrt{\frac{m_{X}}{Q_{X}}}}{\sqrt{\frac{m_{\alpha}}{Q_{\alpha}}}}\dfrac{Z_{X}(Z_{Y}-Z_{X})}{2(Z_{\chem{Ra}}-2)}\dfrac{f\left(\frac{a}{b_{C}}\right)}{f\left(\frac{a}{b_{\alpha}}\right)} \]
+			Vanno dunque calcolati nei due casi i Q valori. 
+			\begin{center}
+				\begin{tabular}{lll}
+					& $ \si{u} $ & $ \si{\mega\electronvolt} $ \\
+					$ \chem{Ra} $  & 224 & +18.86\\
+					$ \chem{Pb} $  & -212 & -(-7.55) \\
+					$ \chem{C} $ & -12 & 0 \\\hline
+					$ Q_{^{12}C} $ & 0 & 26.41 \\
+				\end{tabular}
+				\begin{tabular}{lll}
+					& $ \si{u} $ & $ \si{\mega\electronvolt} $ \\
+					$ \chem{Ra} $  & 224 & +18.86\\
+					$ \chem{Pb} $  & -210 & -(-14.73) \\
+					$ \chem{C} $ & -14 & -3 \\\hline
+					$ Q_{^{14}C} $ & 0 & 30.59 \\
+				\end{tabular}
+			\end{center}
+		Si ricorda che la funzione $ f $ nel termine del fattore di Gamow è: 
+		\[ f(x)=\arccos(\sqrt{x})-\sqrt{x-x^{2}} \]
+		Inoltre si ha che:
+		\[ b_{^{12}C}=\dfrac{6(88-6)\alpha\hbar c}{Q_{^{12}C}}=27.20\si{\femto\meter} \]
+		\[ b_{^{14}C}=\dfrac{6(88-6)\alpha\hbar c}{Q_{^{14}C}}=23.48\si{\femto\meter} \]
+		\[ b_{\alpha}=\dfrac{2(88-2)\alpha\hbar c}{Q_{\alpha}}=43.07\si{\femto\meter} \]
+		Da cui:
+		\[ f\left(\dfrac{a}{b_{\chem{^{12}C}}}\right)=0.584 \quad f\left(\dfrac{a}{b_{\chem{^{14}C}}}\right)=0.517\quad f\left(\dfrac{a}{b_{\alpha}}\right)=0.772  \]
+		Rimane solo il termine delle masse di $ \chem{^{12}C} $ e $ \chem{^{14}C} $. Consultando le tabelle si trova che:
+		\[ M(\chem{^{12}C})=\SI{11.178e3}{\mega\electronvolt\per c\square},\quad M(\chem{^{14}C})=\SI{13.043e3}{\mega\electronvolt\per c\square} \]
+		Da cui inserendo tutto nelle formule:
+		\[ \dfrac{G_{\chem{^{12}C}}}{G_{\alpha}}=1.760\implies G_{\chem{^{12}C}}=32.018 \]
+		\[ \dfrac{G_{\chem{^{14}C}}}{G_{\alpha}}=1.565\implies G_{\chem{^{14}C}}=29.472 \]
+		Esponenziando la formula di Gamow-Nuttal:
+		\[ \tau=\sqrt{\dfrac{(Q+V_{0})}{2ma^{2}}}e^{-2G} \]
+		Da cui:
+		$$ \tau_{\chem{^{12}C}}=\SI{3.110e8}{\second} $$		
+		\[ \tau_{\chem{^{14}C}}=\SI{3.685e11}{\second} \]
+		\end{svol}
+	Si può dunque osservare che il canale di decadimento preferito tra quelli analizzati è quello che rilascia le particelle alpha. Infatti si ha che il tempo medio di decadimento per i due isotopi di carbonio è molto maggiore di quello delle particelle alpha. 
+\end{document}
