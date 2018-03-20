@@ -1,10 +1,11 @@
 \documentclass[10pt, a4paper]{article}
 \usepackage{subfiles}
+
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 
-
+\usepackage{pdfpages}
 \usepackage{youngtab}
 \usepackage{physics}
 \usepackage{tikz}
@@ -27,25 +28,28 @@
 
 \begin{titlepage}
 	\title{Esercizi del corso di Istituzioni di Fisica Nucleare e Subnucleare}
-	\author{Davide Passaro}
-	\date{Anno scolastico 2017-2018}
+	\author{Davide Passaro \\ Matricola: 867815}
+	\date{}
 \end{titlepage}
 
 \begin{document}
 	\maketitle
 	\section{Fisica nucleare}
 		\subfile{SubFiles/Radioattività.tex}
-		\newpage
 		\subfile{SubFiles/DecadimentiAlpha.tex}
-		\newpage
 		\subfile{SubFiles/Fissione.tex}
-		\newpage
 		\subfile{SubFiles/ShellModel.tex}
-		\newpage
 	\section{Fisica delle particelle}
 		\subfile{SubFiles/BetaDecay.tex}
-		\newpage
 		\subfile{SubFiles/NuclearFusion.tex}
-		\newpage
 		\subfile{SubFiles/EtaDecay.tex}
+		\subfile{SubFiles/QuarkModel.tex}
+	\section{Conti}
+		Per gli esercizi per i quali è stato necessario fare dei conti è stato usato il software Mathematica. I fogli di calcolo utilizzati sono elencati in seguito esercizio per esercizio.
+		\includepdf{Conti/Esercizio1.pdf}
+		\includepdf{Conti/Esercizio2.pdf}
+		\includepdf{Conti/Esercizio3.pdf}
+		\includepdf{Conti/Esercizio6.pdf}
+		\includepdf{Conti/Esercizio7.pdf}
+		\includepdf{Conti/Esercizio9.pdf}
 \end{document}

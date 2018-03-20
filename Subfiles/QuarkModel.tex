@@ -1,0 +1,101 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	\begin{table}[]
+		\centering
+		\caption{Processi da analizzare per l'esercizio \ref{exe:16.3}}
+		\label{tbl:exe16.3}
+		\begin{tabular}{ccc|ccc}
+			Numero & Processo & Soglia $ \si{\giga\electronvolt}$ & Numero & Processo & Soglia $ \si{\giga\electronvolt}$ \\ \hline
+			1 & $ \pi+N\to\Lambda+K $ & 0.76 & 6 &$ N+N\to\Sigma+\Sigma $ & 1.16 \\
+			2 & $ \pi+N\to\Sigma+K $ & 0.90 & 7 &  $ N+N\to\Lambda+K+N $ & 1.57 \\
+			3 & $ \pi+N\to N+K+\overline{K} $ & 1.36 & 8 & $ N+N\to\Sigma+K+N $ & 1.80 \\
+			4 & $ \pi+N\to \Xi+K+K $ & 2.23 & 9 & $ N+N\to N+N+K+\overline{K} $ & 2.50 \\
+			5 &$ N+N\to\Lambda+\Lambda $ & 0.77 & 10 & $ N+N\to \Xi+K+K+N $ & 3.74 \\
+		\end{tabular}
+	\end{table}
+	\begin{ese}[16.3]
+		\label{exe:16.3}
+		Verificare le energie di soglia dei processi nella tabella \ref{tbl:exe16.3} ed identificare quelli proibiti per la conservazione dei numeri quantici.
+	\end{ese}
+	\begin{svol}
+		L'energia di soglia è definita come l'energia cinetica minore che debba avere una particella in una reazione affiché quella reazione abbia luogo. Al limite si impone che l'energia cinetica delle particelle prodotte sia nulla e che tutta l'energia di partenza sia trasformata in materia. Si ha quindi che, se $ p_{1},\ p_{2} $ sono due particelle generiche che intervengono in un'interazione a produrre altre particelle, l'energia nel centro di massa è data da (presa la prima particella ferma e la seconda in moto):
+		\begin{gather}
+		s=m_{1}^{2}+m_{2}^{2}+2m_{1}E_{2}=M
+		\end{gather}
+		dove $ M $ è la massa dei prodotti. Si ha quindi che:
+		\begin{gather}
+		E_{2}=\dfrac{M-m_{1}^2-m_{2}^2}{2m_{1}}
+		\end{gather}
+		Che è la relazione per l'energia totale della particella $ 2 $. Ricordiamo però che:
+		\begin{gather}
+		E_{2}=T_{2}+m_{2}
+		\end{gather}
+		Quindi per ottenere l'energia cinetica di soglia bisogna sottrarre anche questo termine. In tutto si ottiene:
+		\begin{gather}
+		T_{2}=\dfrac{M-m_{1}^2-m_{2}^2}{2m_{1}}-m_{2}
+		\end{gather}
+		Essendo queste interazioni forti, devono consdervare tutti i numeri quantici. Ricordiamo nella tabella \ref{tbl:partData} i valori delle masse, di numero barionico e di stranezza delle particelle coinvolte nelle interazioni richieste. Questi dati sono presi dal PDG.
+		\begin{table}[h]
+			\centering
+			\caption{Parametri delle particelle coinvolte nelle reazioni dell'esercizio \ref{exe:16.3}}
+			\label{tbl:partData}
+			\begin{tabular}{c|ccc}
+				Particella & Massa ($ \si{\mega\electronvolt\per c\squared} $) & B &  S \\\hline
+				$ \pi $ & 135 & 0 & 0 \\
+				$ N $ & 938 & 1 & 0 \\
+				$ \Sigma $ & 1093 & 1 & -1\\
+				$ \Lambda $ & 1116 & 1 & -1 \\
+				$ K $ & 497 & 0 & 1 \\
+				$ \overline{K} $ & 497 & 0 & -1 \\
+				$ \Xi $ & 1315 & 1 & -2 \\
+			\end{tabular}
+		\end{table}
+		Si possono quindi calcolare le energie di soglia per ciascun decadimento. Il loro valore è riportato nella tabella \ref{tbl:ensog}.
+		A meno di approssimazioni si può dire che i livelli di soglia sono verificati. Essendo queste reazioni dovute alla forza forte dovranno conservare in particolare la stranezza e il numero barionico. Tra le prime quattro reazioni, il numero barionico dei reagenti è uno. Si vede che questo è conservato per tutte le prime reazioni. Per le ultime sei invece, il numero barionico dei reagenti è due. Poiché tutte prodotti hanno ugual numero barionico, secondo questo numero quantico la trasformazione è permessa. Possiamo quindi eliminare la 10. Per tutte e nove le reazioni rimanenti, i reagenti hanno stranezza nulla. Ci aspettiamo stranezza nulla anche tra i prodotti. Tuttavia i prodotti delle reazioni cinque e sei hanno stranezza uguale a $ -2 $ dunque non sono possibili.
+	\end{svol}
+\newpage
+\begin{table}[h]
+	\centering
+	\caption{Energie di soglia per le reazioni dell'esercizio \ref{exe:16.3}}
+	\label{tbl:ensog}
+	\begin{tabular}{c|cc}
+		Numero & $ E_{p_{2}} $ in $ \si{\mega\electronvolt} $  & $ T_{p_{2}}\si{\mega\electronvolt} $ \\\hline{\tiny }
+		1 & 908 & 773 \\
+		2 & 1043 & 909 \\
+		3 & 1511 & 1376 \\
+		4 & 2363 & 2228 \\
+		5 & 1718 & 780 \\
+		6 & 2097 & 1159 \\
+		7 & 2531 & 1593 \\
+		8 & 2743 & 1805 \\
+		9 & 3453 & 2515 \\
+		10 & 4682 & 3744 \\
+	\end{tabular}
+\end{table}
+
+	\begin{ese}[16.4]
+		In base alla struttura a quark degli adroni, i decadimenti deboli con leptoni nello stato finale possono essere spiegati con il processo elementare:
+		\begin{gather}
+		\label{eqn:decs}
+		s\to u+l^{+}+\nu_{l}
+		\end{gather}
+		ed il suo coniugato di carica. Quali di questi processi sono permessi e quali sono vietati?
+		\begin{center}
+			\begin{tabular}{cc|cc}
+				Numero & Processo & Numero & Processo \\ \hline
+				1 & $ K^{+}\to\pi^{0}+l^{+}+\nu_{l} $ & 5 & $ \overline{K}^{0}\to\pi^{-}+l^{+}+\nu_{l} $ \\
+				2 & $ K^{+}\to\pi^{0}+l^{-}+\overline{\nu}_{l} $ & 6 & $ \overline{K}^{0}\to\pi^{+}+l^{-}+\overline{\nu}_{l} $ \\
+				3 & $ K^{0}\to\pi^{-}+l^{+}+\nu_{l} $ & 7 & $ K^{-}\to\pi^{0}+l^{+}+\nu_{l} $ \\
+				4 & $ K^{0}\to\pi^{+}+l^{-}+\overline{\nu}_{l} $ & 8 & $ K^{-}\to\pi^{0}+l^{-}+\overline{\nu}_{l} $ \\
+			\end{tabular}
+		\end{center}
+	\end{ese}
+	\begin{svol}
+		Essendo $ \pi^{0} $ una sovrapposizione di due coppie quark antiquark, ossia
+		\begin{gather}
+		\pi^{0}=\dfrac{u\overline{u}+d\overline{d}}{\sqrt{2}}
+		\end{gather}
+		questo non può essere creato per solo decadimento di quark $ s $. Perciò le 1, 2, 7 e la 8 sono da scartarsi immediatamente. Per le restanti si ha che, $ s $ ha stranezza uguale a $ -1 $ quindi $ \overline{s} $ ha stranezza uguale ad $ 1 $. Allo stesso modo $ K^{0} $ ha stranezza uguale a $ 1 $ e $ \overline{K}^{0} $ ha stranezza uguale a $ -1 $. Dunque $ K^{0} $ contiene un $ \overline{s} $ e $ \overline{K}^{0} $ contiene un $ s $. Inoltre è noto che $ \pi^{+} $ contenga un $ u $ e di conseguenza $ \pi^{-} $ contiene un $ \overline{u} $. Dato ciò, con riferimento al decadimento \ref{eqn:decs}, si ha che i decadimenti permessi sono solamente il 3 e il 6.
+	\end{svol}
+\end{document}
