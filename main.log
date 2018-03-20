@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.4)  19 MAR 2018 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.4)  20 MAR 2018 14:46
 entering extended mode
 **./main.tex
 (main.tex
@@ -21,6 +21,15 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfiles\subfiles.sty"
+Package: subfiles 2012/05/23 Federico Garcia
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
@@ -30,8 +39,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -368,15 +377,6 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count91
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfiles\subfiles.sty"
-Package: subfiles 2012/05/23 Federico Garcia
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks16
-\verbatim@line=\toks17
-\verbatim@in@stream=\read1
-))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\youngtab\youngtab.sty"
 Package: youngtab 1999/05/19 v1.1; Macros for Young-Tableaux
 \y@b@xdim=\dimen104
@@ -2008,25 +2008,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \it@ocap on input line 31.
-LaTeX Info: Redefining \it@ccap on input line 31.
+LaTeX Info: Redefining \it@ocap on input line 34.
+LaTeX Info: Redefining \it@ccap on input line 34.
 
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -2201,62 +2201,62 @@ File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c__siunitx_mathsf_int=\count193
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 34.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 31.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 34.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 31.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 34.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 31.
+(Font)              <10> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+(Font)              <5> on input line 34.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 34.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \c__siunitx_mathtt_int=\count194
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 34.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 32.
+(Font)              <12> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 32.
+(Font)              <8> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 32.
+(Font)              <6> on input line 35.
 
 (SubFiles/Radioattività.tex
 
@@ -2265,7 +2265,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 {C:/Users/passa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
-Underfull \hbox (badness 10000) in paragraph at lines 58--35
+Underfull \hbox (badness 10000) in paragraph at lines 57--38
 
  []
 
@@ -2275,7 +2275,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 6.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 57--39
+Underfull \hbox (badness 10000) in paragraph at lines 57--42
 
  []
 
@@ -2289,12 +2289,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-) [8] (SubFiles/NuclearFusion.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 47--45
+) [8] (SubFiles/BetaDecay.tex [9])
+Underfull \hbox (badness 10000) in paragraph at lines 72--47
 
  []
 
-[9] (SubFiles/EtaDecay.tex
+[10] (SubFiles/NuclearFusion.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 67--49
+
+ []
+
+[11] (SubFiles/EtaDecay.tex
 
 Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
 d on input line 19.
@@ -2303,16 +2308,16 @@ LaTeX Font Info:    Try loading font information for U+euf on input line 19.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
+Underfull \hbox (badness 10000) in paragraph at lines 39--51
 
  []
 
-[10] (main.aux) ) 
+[12] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 24750 strings out of 493333
- 491473 string characters out of 3139195
- 505657 words of memory out of 3000000
- 27855 multiletter control sequences out of 15000+200000
+ 24757 strings out of 493333
+ 491562 string characters out of 3139195
+ 507710 words of memory out of 3000000
+ 27859 multiletter control sequences out of 15000+200000
  93196 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,21n,54p,10399b,1046s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2334,9 +2339,9 @@ TeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (10 pages, 296463 bytes).
+Output written on main.pdf (12 pages, 308808 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

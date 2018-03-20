@@ -1,0 +1,74 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	\begin{ese}[9.2]
+		Data la sezione d'urto:
+		\begin{gather}
+		\label{eqn:sigmanu}
+		\sigma(\overline{\nu}+p\to e^++n)\approx5.6\dfrac{G_{F}^2E_{\nu}^{2}\left(\hbar c\right)^2}{\pi}
+		\end{gather}
+		Assumendo che tale sezione d'urto sia indipendente dallo stato legato di $ p $ in un nucleo, calcolare il libero cammino medio in $ \chem{Fe} $ di un antineutrino di $ \SI{1}{\mega\electronvolt} $.
+		
+		Considerando un reattore nucleare di $ W=\SI{700}{\mega\watt} $:
+		\begin{enumerate}
+			\item Quante fissioni avvengono in un secondo?
+			\item Qual è l'ordine di grandezza di energia e flusso degli antineutrini a $ \SI{10}{\meter} $ dal reattore?
+			\item Quante interazioni per ora sono attese in $ \SI{200}{\liter} $ di $ \chem{H_2O} $ (si consideri solo l'interazione con $ \chem{H} $)?
+		\end{enumerate}
+	\end{ese}
+	\begin{svol}
+		Come visto a lezione il libero cammino medio è definito come:
+		\begin{gather}
+		\label{eqn:libcammdef}
+		\lambda:=\dfrac{1}{n_{t}\sigma}
+		\end{gather}
+		ove $ n_{t} $ rappresenta la densità numerica di target (espressa in unità inverse di volume) e $ \sigma $ è la sezione d'urto. Quest'ultima si può ricavare dai dati forniti dal problema utilizzando la formula \ref{eqn:sigmanu}, mentre per trovare la seconda bisogna consultare le tabelle. 
+		
+		Per la prima, è stato calcolato sperimentalmente il valore di $ G_{F} $ e questo risulta 
+		\begin{gather}
+			G_{F}=\SI{1.150e-5}{\per\giga\electronvolt\squared}=\SI{1.150e-11}{\per\mega\electronvolt\squared}
+		\end{gather}
+		Assumendo per $ \hbar c = \SI{200}{\femto\meter\mega\electronvolt}=\SI{200e-13}{\centi\meter\mega\electronvolt} $ si ha che:
+		\begin{gather}
+			\sigma=\SI{9.430e-44}{\centi\meter\squared}=\SI{9.430e-48}{\meter\squared}
+		\end{gather} 
+		Per calcolare $ n_{t} $ bisogna prendere in considerazione più costanti. Questo numero rappresenta la densità di target, che in queto caso sono i protoni. La densità di protoni può essere ricavata dalla densità di nuclei di ferro, moltiplicandola per 26, il numero di protoni per nucleo. Quest'ultima densità, è ricavabile tramite la nota relazione a partire dalla densità di massa, il peso atomico e il numero di Avogadro. La formula completa è:
+		\begin{gather}
+		n_{t}=\dfrac{Z\rho N_{a}}{m_{\chem{Fe}}}\approx\SI{2.2e24}{\per\centi\meter\cubed}
+		\end{gather}
+		Il libero cammino medio è quindi:
+		\begin{gather}
+		\lambda=\SI{4.807e18}{\centi\meter}=\SI{4.807e13}{\kilo\meter}=\SI{5.08}{ly}
+		\end{gather}
+		
+		
+		L'energia liberata per fissione è di $ Q_{fiss}=\SI{183}{\mega\electronvolt}=\SI{2.932e-11}{\joule} $. Si ha quindi che il numero di fissioni al secondo è:
+		\begin{gather*}
+		f=\dfrac{W}{Q_{fiss}}=\SI{2.287e19}{\chem{^{235}U}\per\second}
+		\end{gather*}
+		Essendoci in media sei decadimenti beta per fissione, il numero di neutrini prodotto al secondo è
+		\begin{gather}
+			f_{\overline{\nu}}=6\dfrac{W}{Q_{fiss}}=\SI{1.37e20}{\overline{\nu}\per\second}
+		\end{gather}
+		
+		Se ogni antineutrino ha $ \SI{1}{\mega\electronvolt} $ come nella prima parte dell'esercizio e supponendo che vengano emessi senza assi privilegiati, si ha dunque, a $ \SI{10}{\meter} $ un flusso di antineutrini pari a:
+		\begin{gather*}
+		\Phi_{\overline{\nu}}=\dfrac{f_{\overline{\nu}}}{400\pi}=\SI{1.09e17}{\overline{\nu}\per\meter\squared}
+		\end{gather*}
+		Poiché ciascun antineutrino porta un $ \si{\mega\electronvolt} $ il flusso di energia totale è di:
+		\begin{gather*}
+		\Phi=\SI{1.09e17}{\mega\electronvolt\per\meter\squared}
+		\end{gather*}
+		Il peso atomico dell'acqua è di circa $ \SI{18}{u} $ e la densità dell'acqua è di un kilogrammo per litro. In 200 litri d'acqua ci sono quindi:
+		\begin{gather*}
+		N_{\chem{H_{2}O}}=\dfrac{200}{\num{18e-3}}N_{A}=\num{6.69e27}
+		\end{gather*}
+		molecole d'acqua. Ciascuna di queste contiene due atomi di idrogeno quindi:
+		\begin{gather*}
+		N_{\chem{H}}=\num{1.338e28}		\end{gather*}
+		Il numero di interazioni per unità di tempo è dato dalla formula:
+		\begin{gather*}
+		\der{n(\theta)}{t}=\Phi N_{T}\sigma=\SI{1.37e-2}{\overline{\nu}\per\second}
+		\end{gather*}
+	\end{svol}
+\end{document}

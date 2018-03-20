@@ -1,8 +1,9 @@
 \documentclass[10pt, a4paper]{article}
+\usepackage{subfiles}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-\usepackage{subfiles}
+
 
 \usepackage{youngtab}
 \usepackage{physics}
@@ -19,6 +20,8 @@
 \newtheorem{ese}{Esercizio}
 
 \newenvironment{svol}{\paragraph{Svolgimento:}}{\hfill$\square$\newline}
+
+\newcommand{\der}[3][]{\ensuremath{\dfrac{d^{#1}#2}{d#3^{#1}}}}
 
 \newenvironment{dati}{\paragraph{Dati:}}{\hfill}
 
@@ -40,7 +43,8 @@
 		\subfile{SubFiles/ShellModel.tex}
 		\newpage
 	\section{Fisica delle particelle}
-
+		\subfile{SubFiles/BetaDecay.tex}
+		\newpage
 		\subfile{SubFiles/NuclearFusion.tex}
 		\newpage
 		\subfile{SubFiles/EtaDecay.tex}

@@ -1,49 +1,69 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../main]{subfiles}
 
 \begin{document}
 	\begin{ese}[10.2]
-		Le reazioni nucleari avvengono nella parte centrale del Sole:
-		\begin{gather}
-			R<0.2R_{\odot}
-		\end{gather}
-		In tale regione è contenuta circa un terzo della massa solare. Assumendo che il Sole sia composto totalmente da idrogeno, dare una stima della reattività:
-		\begin{gather*}
-			\left<\sigma\nu\right> 
-		\end{gather*}
-		per la reazione:
-		\begin{gather}
-		\label{eqn:fusHH}
-			\chem{^{1}H}+\chem{^{1}H}=\chem{^{2}H}+e^{+}+\nu_{e}
-		\end{gather}
-	\end{ese}
-	\begin{svol}
-		La massa del Sole è:
-		\begin{gather*}
-		M=\SI{2e20}{\kilo\gram}
-		\end{gather*}
-		e la potenza irraggiata è di:
-		\begin{gather*}
-		L=\SI{4e26}{\watt}
-		\end{gather*}
-		Ogni processo di fusione libera $ \SI{24.68}{\mega\electronvolt}=	\SI{3.954e-12}{\joule} $. Dunque il tasso di fusioni è di:
-		\begin{gather*}
-		f=\dfrac{L}{\SI{3.954e-12}{\joule}}=\SI{4e38}{\per\second}
-		\end{gather*}
-		Per ogni fusione ci sono due reazioni del tipo \ref{eqn:fusHH} per cui il tasso di reazioni è di:
-		\begin{gather}
-		f_{H+H}=2f=\SI{8e38}{\per\second}
-		\end{gather}
-		La massa di un protone è di:
-		\begin{gather*}
-			m_{p}=\SI{938}{\mega\electronvolt\per c\squared}=\SI{1.673e-27}{\kilo\gram}
-		\end{gather*}
-		Per cui il numero di protoni presenti nella zona centrale del Sole è di:
-		\begin{gather*}
-		N_{H}=\dfrac{M_{\odot}}{3m_{p}}\approx \num{4e56}
-		\end{gather*}
-		Quindi la probabilità di fusione in un secondo è:
-		\begin{gather*}
-			\left<\sigma\nu\right>=\dfrac{f_{H+H}}{N_{H}}=\num{2e-18}
-		\end{gather*}
-	\end{svol}
+	Le reazioni nucleari avvengono nella parte centrale del Sole:
+	\begin{gather}
+	R<0.2R_{\odot}
+	\end{gather}
+	In tale regione è contenuta circa un terzo della massa solare. Assumendo che il Sole sia composto totalmente da idrogeno, dare una stima della reattività:
+	\begin{gather*}
+	\left<\sigma\nu\right> 
+	\end{gather*}
+	per la reazione:
+	\begin{gather}
+	\label{eqn:fusHH}
+	\chem{^{1}H}+\chem{^{1}H}=\chem{^{2}H}+e^{+}+\nu_{e}
+	\end{gather}
+\end{ese}
+\begin{svol}
+	La reattività di una reazione è definita implicitamente dalla relazione:
+	\begin{gather}
+		\der[]{n}{t}=n_{x}n_{y}\left<\sigma\nu\right> 
+	\end{gather}
+	Dove al primo membro della reazione si ha il tasso di reazioni per unità di volume e al secondo membro $ n_{x} $ e $ n_{y} $ sono le densità di molecole dei reagenti. In questo caso visto che i reagenti sono uguali e sono protoni questo è $ n_{p}^{2} $. Va dunque calcolato il numero di protoni. La potenza irraggiata dal Sole è di:
+	\begin{gather*}
+	L=\SI{4e26}{\watt}
+	\end{gather*}
+	Ogni processo di fusione libera $ \SI{24.68}{\mega\electronvolt}=	\SI{3.954e-12}{\joule} $. Dunque il tasso di fusioni è di:
+	\begin{gather*}
+	f=\dfrac{L}{\SI{3.954e-12}{\joule}}=\SI{1.01e38}{\per\second}
+	\end{gather*}
+	Per ogni fusione ci sono due reazioni del tipo \ref{eqn:fusHH} per cui il tasso di reazioni è di:
+	\begin{gather}
+		f_{H+H}=2f=\SI{2.02e38}{\per\second}
+	\end{gather}
+	Il volume nel quale avviene la reazione è:
+	\begin{gather}
+		V_{\odot,c}=\dfrac{4}{3}\pi R^{3}=\dfrac{4}{3}\pi (0.2R_{\odot})^{3}
+	\end{gather}
+	Con un raggio del Sole uguale a $ \SI{6.96e8}{\meter} $ si ha un volume di:
+	\begin{gather}
+		V_{\odot,c}=\SI{1.13e25}{\meter\cubed}
+	\end{gather}
+	quindi un tasso di interazioni per unità di volume uguale a:
+	\begin{gather}
+		\der[]{n}{t}=\SI{1.79e13}{\per\meter\cubed}
+	\end{gather}
+	La massa del sole è di
+	\begin{gather*}
+	M=\SI{2e20}{\kilo\gram}
+	\end{gather*}
+	Se la massa della zona centrale è un terzo di quella totale allora:
+	\begin{gather}
+	M_{c}=\SI{6.67e19}{\kilo\gram}
+	\end{gather}
+	La massa di un protone è di:
+	\begin{gather*}
+	m_{p}=\SI{938}{\mega\electronvolt\per c\squared}=\SI{1.673e-27}{\kilo\gram}
+	\end{gather*}
+	Per cui la densità di protoni presenti nella zona centrale del Sole è di:
+	\begin{gather*}
+	n_{H}=\dfrac{M_{\odot}}{3m_{p}V_{\odot,c}}= \SI{3.52e21}{\per\meter\cubed}
+	\end{gather*}
+	Quindi la probabilità di fusione in un secondo è:
+	\begin{gather*}
+	\left<\sigma\nu\right>=\der[]{n}{t}\dfrac{1}{n_{H}^{2}}=\SI{1.63e-5}{\meter\cubed\per\second}
+	\end{gather*}
+\end{svol}
 \end{document}
