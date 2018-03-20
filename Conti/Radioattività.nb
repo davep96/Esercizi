@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3625,        124]
+NotebookOptionsPosition[      2949,         96]
+NotebookOutlinePosition[      3295,        111]
+CellTagsIndexPosition[      3252,        108]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"halflife", " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"4.5", "*", 
+     RowBox[{"10", "^", "9"}]}], ",", 
+    RowBox[{"7.14", "*", 
+     RowBox[{"10", "^", "8"}]}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.730269384685399*^9, 3.730269458665206*^9}}],
+
+Cell[BoxData[
+ RowBox[{"timeConstant", " ", ":=", " ", 
+  RowBox[{"halflife", "/", 
+   RowBox[{"Log", "[", "2", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7302694634958496`*^9, 3.7302694886518555`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"decayConstant", " ", ":=", " ", 
+  RowBox[{"1", "/", "timeConstant"}]}]], "Input",
+ CellChangeTimes->{{3.7302694959359045`*^9, 3.7302695101162324`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["timeConstant"], "Input",
+ CellChangeTimes->{{3.730269511970066*^9, 3.7302695129123945`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"6.492127684000336`*^9", ",", "1.0300842591947199`*^9"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.7302695135374775`*^9, 3.730271639718651*^9, 
+  3.7302803849266424`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["decayConstant"], "Input",
+ CellChangeTimes->{{3.730269514749408*^9, 3.730269516733056*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1.5403270679109895`*^-10", ",", "9.707943705321362`*^-10"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.730269517210692*^9, 3.730271639739976*^9, 
+  3.730280384951092*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"t", "[", "r_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"(", 
+     RowBox[{"Log", "[", "r", "]"}], ")"}]}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"decayConstant", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], "-", 
+     RowBox[{"decayConstant", "[", 
+      RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.7302703708369207`*^9, 3.7302704127474675`*^9}, {
+   3.7302705171431847`*^9, 3.730270517444119*^9}, {3.7302711112193346`*^9, 
+   3.730271115198437*^9}, {3.730271850477372*^9, 3.7302718513973036`*^9}, {
+   3.7302720235369234`*^9, 3.730272026639917*^9}, 3.7302732423380814`*^9, {
+   3.730280354019227*^9, 3.7302803684482374`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"t", "[", "0.007", "]"}]], "Input",
+ CellChangeTimes->{{3.7302803729092283`*^9, 3.730280379336787*^9}}],
+
+Cell[BoxData["6.075022066045485`*^9"], "Output",
+ CellChangeTimes->{{3.730280380695013*^9, 3.7302803850321417`*^9}}]
+}, Open  ]]
+},
+WindowSize->{682, 830},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 289, 8, 30, "Input"],
+Cell[850, 30, 202, 4, 30, "Input"],
+Cell[1055, 36, 176, 3, 30, "Input"],
+Cell[CellGroupData[{
+Cell[1256, 43, 106, 1, 30, "Input"],
+Cell[1365, 46, 210, 5, 34, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1612, 56, 105, 1, 30, "Input"],
+Cell[1720, 59, 210, 5, 34, "Output"]
+}, Open  ]],
+Cell[1945, 67, 718, 17, 30, "Input"],
+Cell[CellGroupData[{
+Cell[2688, 88, 126, 2, 30, "Input"],
+Cell[2817, 92, 116, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
