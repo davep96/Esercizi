@@ -1,8 +1,8 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../main]{subfiles}
 
 \begin{document}
 	\begin{ese}[3.2]\label{ese:UDecay}
-		L'abbondanza naturale di $ ^{235}\chem{U} $ è dello $ 0.7\% $ di $ ^{238}U $. Assumendo che i processo di nucleosintesi producano approssimaticamente le stesse quantità di $ ^{235}U $ e di $ ^{238}U $, quanti è \emph{vecchio} l'uranio presente sulla terra. Si ricordino i dati delle due catene della radiattività naturale:
+		L'abbondanza naturale di $ ^{235}\chem{U} $ è dello $ 0.7\% $ di $ ^{238}U $. Assumendo che i processo di nucleosintesi producano approssimaticamente le stesse quantità di $ ^{235}U $ e di $ ^{238}U $, quanto è \emph{vecchio} l'uranio presente sulla terra. Si ricordano i dati delle due catene della radiattività naturale:
 		\begin{gather}
 		A=4n+2,\ ^{238}\chem{U},\ \tau_{\frac{1}{2}}=\SI{4.5e9}{yr} \\
 		A=4n+3,\ ^{235}\chem{U},\ \tau_{\frac{1}{2}}=\SI{7.15e8}{yr}
@@ -18,7 +18,7 @@
 		\end{gather}
 		La costante di decadimento a sua volta è interpretabile come la probabilità di decadimento per unità di tempo. Si ha dunque che, una quantità di materia $ m(t) $ in un'unità di tempo decrescerà di una quantità legata sia a $ \lambda $ che al proprio valore in quell'istante. Questo concetto può esprimersi matematicamente attraverso la seguente equazione differenziale:
 		\begin{gather}
-			-\dfrac{m(t)}{t}=\lambda m(t)
+			-\der{m(t)}{t}=\lambda m(t)
 		\end{gather}
 		La soluzione di questa equazione differenziale è banale e nota, perciò non verrà riportata. Questa è:
 		\begin{gather}
@@ -46,7 +46,7 @@
 		\begin{gather}
 		r(t)=\dfrac{m(t)_{^{235}\chem{U}}}{m(t)_{^{238}\chem{U}}}=e^{-(\lambda_{^{235}\chem{U}}-\lambda_{^{238}\chem{U}})t} \\
 		\end{gather}
-		Da cui, prendendo il logaritmo e dividendo per meno la differenza delle costanti di decadimento si ottine:
+		Da cui, prendendo il logaritmo e dividendo per meno la differenza delle costanti di decadimento si ottiene:
 		\begin{gather}
 		\label{eqn:rappfin}
 		t(r)=-\dfrac{\ln(r)}{(\lambda_{^{235}\chem{U}}-\lambda_{^{238}\chem{U}})}

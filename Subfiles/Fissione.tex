@@ -2,7 +2,7 @@
 
 \begin{document}
 	\begin{ese}[5.3]
-		Usando le sezioni d'urto riportate nella tabella \ref{tbl:CrossSectionData}, ed assumendo che, se si usa acqua come moderatore, un neutrone abbia una probabilità del $47\%$ di essere catturato in acqua, cacolare la frazione di $ ^{235}\chem{U} $ richiesta per avere un reattore critico. Oggi la frazione di $ ^{235}\chem{U} $ è del $ 0.7\% $, ma in passato era maggiore: calcolare quando era sufficiente perché l'$ U $ naturale potesse essere critico.
+		Usando le sezioni d'urto riportate nella tabella \ref{tbl:CrossSectionData}, ed assumendo che, se si usa acqua come moderatore, un neutrone abbia una probabilità del $47\%$ di essere catturato dal moderatore, cacolare la frazione di $ ^{235}\chem{U} $ richiesta per avere un reattore critico. Oggi la frazione di $ ^{235}\chem{U} $ è del $ 0.7\% $, ma in passato era maggiore: calcolare quando era sufficiente perché l'$ U $ naturale potesse essere critico.
 		\begin{table}[]
 			\centering
 			\caption{Valori della sezione d'urto per il problema 5.3}
@@ -17,15 +17,15 @@
 		\end{table}
 	\end{ese}
 	\begin{svol}
-		L'equazione che descrive il numero edio di neutroni prodotti per un sistema in cui avviene una reazione nucleare è:
+		L'equazione che descrive il numero medio di neutroni prodotti per un sistema in cui avviene una reazione nucleare è:
 		\begin{gather}
 			N(t)=N(0)\exp\left[(\nu q-1)\dfrac{1}{\tau}\right]
 		\end{gather}
-		Dove $ N(t) $ è il numero di neutroni, $ \tau $ è il tempo medio necessario affinché un neutrone causi una fissione, $ \nu $ è il numero medio di neutroni prodotti da una fissione, e $ q $ è la probabilità che la fissione avvenga. Affiché il reattore possa autossotenersi è necessario che questo prodotto sia uguale ad uno, in modo tale da avere una soluzione \emph{critica}. Si suppone che la probabilità di fissione con l'uranio 238 possa essere trascurata. Come numero medio di neutroni prodotti per fissione, si utilizza il valore riportato a lezione di $ \nu\approx2.4 $. Sia $ x $ il rapporto tra gli isotopi di uranio. La sezione d'urto di fissione totale è quindi:
+		Dove $ N(t) $ è il numero di neutroni, $ \tau $ è il tempo medio necessario affinché un neutrone causi una fissione, $ \nu $ è il numero medio di neutroni prodotti da una fissione, e $ q $ è la probabilità che la fissione avvenga. Affiché il reattore possa auto sotenersi è necessario che questo prodotto sia uguale ad uno, in modo tale da avere una soluzione \emph{critica}. Si suppone che la probabilità di fissione con l'uranio 238 possa essere trascurata. Come numero medio di neutroni prodotti per fissione, si utilizza il valore riportato a lezione di $ \nu\approx2.4 $. Sia $ x $ il rapporto tra gli isotopi di uranio. La sezione d'urto di fissione totale è quindi:
 		\begin{gather}
 			\overline{\sigma}_{fiss}=x\times\sigma_{fiss,^{235}\chem{U}}
 		\end{gather}
-		La sezione d'urto di cattura neutronicq con seguente emissione di fotone totale invece è:
+		La sezione d'urto di cattura neutronica con seguente emissione di fotone totale invece è:
 		\begin{gather}
 			\label{eqn:sigmafiss}
 			\overline{\sigma}_{n,\gamma}=x\times\sigma_{n,\gamma,^{235}\chem{U}}+(1-x)\times\sigma_{n,\gamma,^{238}\chem{U}}
